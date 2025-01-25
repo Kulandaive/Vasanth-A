@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Vasanth A</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #f3f4f6, #e5e7eb);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: linear-gradient(90deg, #4f46e5, #3b82f6);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.25rem;
+            font-weight: 300;
+        }
+
+        nav {
+            background: #1f2937;
+            color: white;
+            display: flex;
+            justify-content: center;
+            padding: 1rem 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            padding: 0.5rem 1rem;
+            font-size: 1rem;
+            font-weight: 500;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        nav a:hover {
+            background: #374151;
+            color: #60a5fa;
+            border-radius: 5px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 3rem auto;
+            padding: 2rem;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .about {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .about h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #2563eb;
+        }
+
+        .about p {
+            font-size: 1.2rem;
+            font-weight: 300;
+            color: #555;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .project {
+            background: #f9fafb;
+            border: 1px solid #e5e7eb;
+            border-radius: 10px;
+            padding: 1.5rem;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .project:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .project img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .project h3 {
+            margin: 1rem 0;
+            font-size: 1.5rem;
+            color: #111827;
+        }
+
+        .project p {
+            color: #6b7280;
+            font-size: 1rem;
+        }
+
+        .contact {
+            text-align: center;
+            margin-top: 3rem;
+        }
+
+        .contact h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #2563eb;
+        }
+
+        .contact p {
+            font-size: 1.2rem;
+            color: #4b5563;
+        }
+
+        .contact a {
+            color: #3b82f6;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background: #1f2937;
+            color: white;
+            margin-top: 3rem;
+        }
+
+        footer p {
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Vasanth A</h1>
+        <p>Welcome to my advanced personal portfolio website!</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container" id="about">
+        <div class="about">
+            <h2>About Me</h2>
+            <p>Hi, I am Vasanth, a Creative Technologist. I have completed my B.Tech degree in Information Technology at Sri Krishna College Of Technology. I have participated in several national-level Hackathons and worked on numerous projects. My area of interest is data structures, and I aspire to work as a backend developer.</p>
+            <a href="#" download style="color: #2563eb; font-weight: 500;">Download Resume</a>
+        </div>
+
+        <div class="projects" id="projects">
+            <div class="project">
+                <img src="https://th.bing.com/th/id/OIP.ptQzsuxXZ7PNgqK-lI_b-gHaEb?rs=1&pid=ImgDetMain" alt="Project 1">
+                <h3>Making a Design System</h3>
+                <p>From scratch using C and C++. C follows a procedural paradigm for structured programming.</p>
+            </div>
+            <div class="project">
+                <img src="https://global-uploads.webflow.com/64669e53d9b0aa541ec85221/64c4eebbd0c3a814dc1f405a_yVD4wVLLcareHC5YtFlvBqMZf9ytldVfXd8JuTygBwJUFUpiA-out-0.png" alt="Project 2">
+                <h3>Creating Pixel Perfect Icons</h3>
+                <p>Using Figma for precise and impactful designs. Ideal for user-friendly interfaces.</p>
+            </div>
+            <div class="project">
+                <img src="https://th.bing.com/th/id/OIP.vcl0VjQhczRuHy-H-WDt1AHaEK?rs=1&pid=ImgDetMain" alt="Project 3">
+                <h3>Smart Campus Application</h3>
+                <p>A digital solution for efficient campus navigation and management, including event reminders and course scheduling.</p>
+            </div>
+        </div>
+
+        <div class="contact" id="contact">
+            <h2>Achievements & Certifications</h2>
+            <p>Certifications include Advanced Java Programming, Designing Dashboards, and Adobe Photoshop.</p>
+            <p>Connect with me: <a href="mailto:vasantharunagiri4@gmail.com">vasantharunagiri4@gmail.com</a> | <a href="https://github.com/vasanth">GitHub</a> | <a href="https://in.linkedin.com/vasanth">LinkedIn</a></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Vasanth A. All rights reserved.</p>
+    </footer>
+</body>
+</html>
